@@ -2,5 +2,5 @@
 
 Testing travis-ci build cancellation
 
-testing1
+testing0
 
