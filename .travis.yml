@@ -3,13 +3,25 @@ jobs:
     - os: linux
       language: c
       arch: amd64
+      vm:
+        size: medium
+      script:
+        - clang -coverage -O0 hello_world.c -o hello_world
+        - ./hello_world
+    - os: osx
+      language: c
+      arch: amd64
+      vm:
+        size: large
       script:
         - clang -coverage -O0 hello_world.c -o hello_world
         - ./hello_world
     - os: linux
-      language: ruby
+      language: c
       dist: xenial
       arch: amd64
+      vm:
+        size: x-large
       script:
         - clang -coverage -O0 hello_world.c -o hello_world
         - ./hello_world
