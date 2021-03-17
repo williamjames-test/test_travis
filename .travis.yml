@@ -15,4 +15,3 @@ jobs:
 notifications:
   email:
     - shairyarbaig@gmail.com
-    - shairyar@travis-ci.org
