@@ -1,6 +1,5 @@
-language: ruby
 os: linux
-arch: s390x
+arch: arm64
 dist: xenial
 rvm: 2.6.3
 jobs:
