@@ -3,7 +3,7 @@ install: skip
 
 jobs:
   include:
-    - dist: focal
+    - dist: xenial
       os: freebsd
       arch: ppc64le
       vm:
