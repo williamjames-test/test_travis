@@ -5,9 +5,9 @@ jobs:
   include:
     - dist: focal
       os: linux
+      arch: ppc64le
       vm:
-        size: 2x-large
+        size: medium
       script:
       - echo "Threads/core $(nproc --all)"
       - free -g
-
