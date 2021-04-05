@@ -6,9 +6,15 @@ jobs:
     - dist: focal
       os: linux
       vm:
-        size: medium
+       size: medium
       script:
       - echo "Threads/core $(nproc --all)"
       - free -g
-      
+    - dist: focal
+      os: linux
+      vm:
+      size: large
+      script:
+      - echo "Threads/core $(nproc --all)"
+      - free -g
 
