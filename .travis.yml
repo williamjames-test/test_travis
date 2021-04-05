@@ -1,5 +1,5 @@
-os: freebsd
-arch: ppc64le
+os: linux
+arch: amd64
 vm:
   size: large
 rvm: 2.6.3
