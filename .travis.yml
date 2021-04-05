@@ -1,7 +1,7 @@
 os: freebsd
 arch: ppc64le
 vm:
-  size: medium
+  size: large
 rvm: 2.6.3
 jobs:
   include:
