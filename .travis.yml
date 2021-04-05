@@ -1,6 +1,8 @@
 os: linux
-arch: arm64
+arch: amd64
 dist: xenial
+vm:
+  size: medium
 rvm: 2.6.3
 jobs:
   include:
