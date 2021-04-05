@@ -4,7 +4,7 @@ install: skip
 jobs:
   include:
     - dist: focal
-      os: linux
+      os: freebsd
       arch: ppc64le
       vm:
         size: medium
