@@ -5,12 +5,30 @@ jobs:
   include:
     - dist: focal
       os: linux
+      vm:
+        size: medium
       script:
       - echo "Threads/core $(nproc --all)"
       - free -g
     - dist: focal
       os: linux
+      vm:
+        size: large
       script:
       - echo "Threads/core $(nproc --all)"
       - free -g
+    - dist: focal
+      os: linux
+      vm:
+        size: x-large
+      script:
+       - echo "Threads/core $(nproc --all)"
+       - free -g
+    - dist: focal
+      os: linux
+      vm:
+        size: 2x-large
+      script:
+       - echo "Threads/core $(nproc --all)"
+       - free -g
 
