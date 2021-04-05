@@ -1,13 +1,13 @@
-language: python
-install: skip
-
+os: freebsd
+arch: ppc64le
+vm:
+  size: medium
+rvm: 2.6.3
 jobs:
   include:
-    - dist: xenial
-      os: freebsd
-      arch: ppc64le
-      vm:
-        size: medium
-      script:
-      - echo "Threads/core $(nproc --all)"
-      - free -g
+    - stage: "sleep"
+      script: sleep 10
+notifications:
+  email:
+    - shairyarbaig@gmail.com
+    - shairyarbaig@gmail.com
