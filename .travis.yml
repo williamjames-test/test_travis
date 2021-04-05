@@ -1,14 +1,38 @@
-os: linux
-arch: amd64
-dist: xenial
-vm:
-  size: large
-rvm: 2.6.3
+language: python
+install: skip
+
 jobs:
   include:
-    - stage: "sleep"
-      script: sleep 5
-notifications:
-  email:
-    - shairyarbaig@gmail.com
-    - shairyarbaig@gmail.com
+    - dist: focal
+      os: linux
+      script:
+      - echo "Threads/core $(nproc --all)"
+      - free -g
+    - dist: focal
+      os: linux
+      vm:
+       size: medium
+      script:
+      - echo "Threads/core $(nproc --all)"
+      - free -g
+    - dist: focal
+      os: linux
+      vm:
+      size: large
+      script:
+      - echo "Threads/core $(nproc --all)"
+      - free -g
+    - dist: focal
+      os: linux
+      vm:
+        size: x-large
+      script:
+       - echo "Threads/core $(nproc --all)"
+       - free -g
+    - dist: focal
+      os: linux
+      vm:
+        size: 2x-large
+      script:
+       - echo "Threads/core $(nproc --all)"
+       - free -g
