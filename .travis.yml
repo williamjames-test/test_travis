@@ -1,7 +1,7 @@
 os: linux
-arch: amd64
+arch: ppc64le
 vm:
-  size: large
+  size: medium
 rvm: 2.6.3
 jobs:
   include:
