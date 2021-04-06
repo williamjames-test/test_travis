@@ -1,5 +1,5 @@
-os: freebsd
-arch: s390x
+os: osx
+arch: arm64
 vm:
   size: x-large
 rvm: 2.6.3
