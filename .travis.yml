@@ -1,5 +1,7 @@
 os: linux
 arch: ppc64le
+vm:
+  size: large
 rvm: 2.6.3
 jobs:
   include:
