@@ -1,7 +1,7 @@
 os: linux
 arch: amd64
 vm:
-  size: 2x-large
+  size: large
 rvm: 2.6.3
 jobs:
   include:
