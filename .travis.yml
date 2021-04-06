@@ -1,4 +1,4 @@
-os: osx
+os: freebsd
 arch: s390x
 vm:
   size: medium
