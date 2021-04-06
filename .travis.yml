@@ -1,5 +1,5 @@
 os: osx
-arch: amd64
+arch: s390x
 vm:
   size: medium
 rvm: 2.6.3
