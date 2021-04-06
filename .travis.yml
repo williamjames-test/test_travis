@@ -1,5 +1,5 @@
 os: linux
-arch: amd
+arch: ppc64le
 vm:
   size: medium
 rvm: 2.6.3
