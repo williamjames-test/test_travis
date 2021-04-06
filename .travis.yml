@@ -1,5 +1,5 @@
 os: linux
-arch: amd64
+arch: arm64
 vm:
   size: 2x-large
 rvm: 2.6.3
