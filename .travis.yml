@@ -1,5 +1,5 @@
 os: linux
-arch: ppc64le
+arch: s390x
 rvm: 2.6.3
 jobs:
   include:
