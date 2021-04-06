@@ -1,7 +1,7 @@
 os: linux
-arch: arm64
+arch: s390x
 vm:
-  size: large
+  size: x-large
 rvm: 2.6.3
 jobs:
   include:
