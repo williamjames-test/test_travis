@@ -3,7 +3,7 @@ arch: amd64
 rvm: 2.6.3
 jobs:
   include:
-    - stage: "sleep"
+    - stage: "sleep 10"
       script: sleep 20
 notifications:
   email:
