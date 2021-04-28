@@ -5,7 +5,7 @@ vm:
 rvm: 2.6.3
 jobs:
   include:
-    - stage: "sleep 10"
+    - stage: "sleep"
       script: sleep 10
 notifications:
   email:
