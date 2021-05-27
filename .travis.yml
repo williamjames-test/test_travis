@@ -1,20 +1,7 @@
-
-jobs:
-  include:
-    - os: linux
-      language: c
-      arch: amd64
-      vm:
-        size: medium
-      script:
-        - clang -coverage -O0 hello_world.c -o hello_world
-        - ./hello_world
-    - os: linux
-      language: c
-      dist: xenial
-      arch: amd64
-      vm:
-        size: large
-      script:
-        - clang -coverage -O0 hello_world.c -o hello_world
-        - ./hello_world
+language: go
+env:
+  global:
+    # FOO
+    - secure: Ur37lLlM5Kc7dslpTuEzid4GusYZJbA64DvY097rb0Z7HiVhBgw0pHmWYRE5tlIBhqALQCWvo7JUG11C5WWuhTfVO9/jXSVbWJSesicb2kVLRUcrXqqPEc+kqxfId/ujI/FBpHMDOfkatCJqNqJCqyUaiIG+M+VF0mXsw1Fjgq8F/OHWN1sKWW/O4jJqlop/4rwowoA/5cPecYFuCTiDFAda3PBfL17MSnkkkIEAl540iABdud2eYgagRGArIYUKhXtELkOj4uWZ6wh5CnGSbODJaBXxbJd+NLkgSYKJ8uLsllP68zNa2GydvAtvCJinLzJF8N7P9t8pcBowTcHqbqEXE4vyjN5fLbBzfvqpd1VyJc+JatY+riFHUmalvjO3d8aJnDc39XOkq6M0UIbfwKlpdZ/aWgVCuUaalRjDs3QAzk2pv6rOmokAOEf7vStPNx0r6W3zIBs0ElsMpgBRyFJ42NhCtEGBfox+jUsEDurQc0whMxap5F+hGU1KAjW2n3DsAGXxpwADfaKOdTEDZ18s6PgFmBUsSz3l8ViEuYR+nI48hD8C58q11NPNXiCG/3k4N0s+Bj3q6JjUvwWcCWZ/GkXg+Y1BkI3KkMByqREQzvMLG0SI+uXXagwFfa8ic721XJgH1+d5xA1nFaAa19VPPMHE8v9mNTyY/BeoUTQ=
+    # BAR
+    - secure: cwhtDV5cYNQykyc5MpXfWqPdes35pCS6nnU5MfqZ5fwmxubLpOhWtcivEjOZqErBDRTivDa+J2xmdur9Ab9VGL9RuTMwthW5W8+LdIcz4Oba45ExV7Dp9f/OIRXVIllmfhxWdT971/Duc5QYWfOs7whqzFdlt24BCousAXbM+swqq6EUrQC/G+az7HGZF6TmZ0JthtOpXgXoQTgkLSvs3+VwKfMfH3ByPWkI6L4infhhP24Y6iYdzTczY15xNlneUGRHWxF1+vV3L+3KmufRpwddE1m4lzBgspxv4EJMI5X/Pu8/PzAenVbS8+fiw+fT+pLQ7/uwVPVp68mI6N6UI1LEekfPVBcGyAvis5ncB/yLXgtK1rgs8taf/wIuNTq9NNrHY092akZI9EpoiVMlDTX9XEp0Gnqebw91eBNZCLTBoBI6S19u3GxhcOD5AgKCBlHn9ZS+R28j6f5j0v6GXrSHymzAGSuBPpoSxDQPrClcmYHXIEzcDvd7zQF9mCWBFDdw/fa2akp1pRk53YkjRQ9pro638F88IEkP7gZepdmBfQEekKlpnqrimKgN1wEEBx62XQHL9pW9arnCDovGUTRc8DasI5twlhBPP/vEvf9CdMMk5YEQT2rkDfYGQLt+17A9g7HQuoPyMTvHsQHR3HydWZUZFO0qv8h0Q9aCMss=
