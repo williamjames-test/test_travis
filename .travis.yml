@@ -1,4 +1,5 @@
 language: go
+
 env:
   global:
     # FOO
